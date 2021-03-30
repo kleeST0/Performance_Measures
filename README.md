@@ -1,7 +1,7 @@
 # Performance_Measures
 
 Files required to run the analysis:
--	data.RData: the pseudo dataset
+-	data.RData: the pseudo dataset (n=17685 subjects, p=10 covariates, J=264 clusters)
 -	00_Functions.R: all the functions needed to run the analyses
 -	01_Fit_PEM_MVN.R: the main file for conducting semi-competing risks analysis under the PEM-MVN model using “SemiCompRisks” package
 -	02_Cumulative_Excess_Ratio.R: the main file for the Bayesian estimation of cumulative excess readmission/mortality ratios
