@@ -22,6 +22,10 @@ The R libraries needed are:
 -	gaussquad, version 2.0.1, depends on (R≥ 2.0.1)
 
 Instruction:
--	We provide the three separate master R scripts (01_Fit_PEM_MVN.R, 02_Cumulative_Excess_Ratio.R, 03_Loss_Function_Based_Profiling.R) along with the corresponding output files. Therefore, it is not necessary for users to run all three scripts in turn to get the final profiling results. For example, one can directly calculate cumulative excess readmission and mortality ratios (02_Cumulative_Excess_Ratio.R) by loading the files in the Output_Fit_PEM_MVN folder and skip the semi-competing risks analysis (01_Fit_PEM_MVN.R).
+1.	Run “01_Fit_PEM_MVN.R” script to conduct the semi-competing risks analysis under  the PEM-MVN model. The results are saved as “Output_Fit_PEM_MVN”.
+2.	Run “02_Cumulative_Excess_Ratio.R” script to estimate the cumulative excess readmission/mortality ratios. The results are saved as “theta1.RData” for readmission and “theta2.Rdata” for mortality.
+3.	Run “03_Loss_Function_Based_Profiling.R” script for loss-function based joint profiling. The script will generate the results corresponding to Table 2 and Table 3 of the main paper.
 
+Notes
+-	We provide the three separate master R scripts along with the corresponding output files. Therefore, it is not necessary for users to run all three steps outlined above in turn to get the final profiling results. For example, one can directly calculate cumulative excess readmission and mortality ratios (02_Cumulative_Excess_Ratio.R) by loading the files in the Output_Fit_PEM_MVN folder and skip the semi-competing risks analysis (01_Fit_PEM_MVN.R).
 
